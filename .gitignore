@@ -3,6 +3,16 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# --- Keep only .cpp files (and allow walking into subfolders) ---
+*
+!*/
+!*.cpp
+!.gitignore
+!README.md
+!*.h
+!*.hpp
+!CMakeLists.txt
+
 # User-specific files
 *.rsuser
 *.suo
