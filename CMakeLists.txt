@@ -7,4 +7,4 @@ add_executable(Coding_Practice
         
         exercise-3/stats.cpp
         exercise-3/vector_utils.cpp
-  "exercise-4.cpp" )
+  "exercise-4.cpp"  "exercise-5.cpp")
