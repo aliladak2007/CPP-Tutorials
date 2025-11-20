@@ -81,3 +81,20 @@ foreach(src ${FE_W6_SOURCES})
     add_executable(${target} "${src}")
     target_include_directories(${target} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 endforeach()
+
+# ============================================================
+# Further-Exercises/week7
+#   one executable per .cpp (each has its own main)
+# ============================================================
+
+file(GLOB FE_W7_SOURCES
+    "${CMAKE_CURRENT_SOURCE_DIR}/Further-Exercises/week7/*.cpp"
+)
+
+foreach(src ${FE_W7_SOURCES})
+    get_filename_component(base "${src}" NAME_WE)
+    # Different prefix so it does not clash with week6
+    set(target "fe7_${base}")
+    add_executable(${target} "${src}")
+    target_include_directories(${target} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+endforeach()
